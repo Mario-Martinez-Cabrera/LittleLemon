@@ -10,9 +10,9 @@ class RatingSerializer (serializers.ModelSerializer):
     default=serializers.CurrentUserDefault() 
     ) 
 
-class Meta:
-    model = Rating
-    fields = ['user', 'menuitem_id', 'rating']
+    class Meta:
+        model = Rating
+        fields = ['user', 'menuitem_id', 'rating']
 
 validators = [
     UniqueTogetherValidator(
