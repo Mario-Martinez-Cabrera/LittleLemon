@@ -1,7 +1,7 @@
 # LittleLemon
 
 Coursera exercise in the Meta Back-End Developer professional certificate (course: APIs) that 
-uses authentication and validation mechanisms inside DRF. Done using VS Code and Insomnia. 
+uses authentication and validation mechanisms inside DRF. Done using VS Code and Insomnia for APIs. 
 
 Task: 
 The Little Lemon website has grown in popularity since it was launched. 
@@ -18,3 +18,5 @@ views.py
 serializers.py
 settings.py
 admin.py 
+
+Also modified urls.py in LittleLemonDRF to make the views.py work.
