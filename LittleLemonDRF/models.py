@@ -6,5 +6,5 @@ from django.contrib.auth.models import User
 class Rating(models.Model):
     menuitem_id = models.SmallIntegerField()
     rating = models.SmallIntegerField()
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
