@@ -20,3 +20,5 @@ validators = [
     fields=['user', 'menuitem_id', 'rating']
     )
 ]
+
+extra_kwargs = {'rating': {'max_value': 5, 'min_value': 0}, }
