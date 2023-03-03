@@ -3,7 +3,7 @@ from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 from .models import Rating
 from .serializers import RatingSerializer
-from rest_framework.views import ModelViewSet
+from rest_framework.viewsets import ModelViewSet
 
 class RatingsView(ModelViewSet):
     queryset = Rating.objects.all()
