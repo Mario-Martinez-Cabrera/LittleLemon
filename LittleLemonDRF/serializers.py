@@ -9,3 +9,14 @@ class RatingSerializer (serializers.ModelSerializer):
     queryset=User.objects.all(), 
     default=serializers.CurrentUserDefault() 
     ) 
+
+class Meta:
+    model = Rating
+    fields = ['user', 'menuitem_id', 'rating']
+
+validators = [
+    UniqueTogetherValidator(
+    queryset=Rating.objects.all(),
+    fields=['user', 'menuitem_id', 'rating']
+    )
+]
